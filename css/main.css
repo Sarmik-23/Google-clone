@@ -1,0 +1,202 @@
+body {
+    margin:0;
+    padding:0;
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/********************************************************/
+/****************************************/
+/*******************************/
+/*Navegación*/
+header{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 22, 197);
+}
+a{
+    /*Quita la linea de abajo*/
+    text-decoration: none;
+    /*Cambia el cursor del pointer (de la flechita, cambia a la manita al acercar a la opcion que quieras picar*/
+    cursor: pointer;
+}
+nav { 
+    /*Flex, permite a la barra de navegación moverse siempre a todos lados*/
+    display: flex;
+    /*Justificar a la derecha-flex end*/
+    justify-content:flex-end;
+    margin-right: 15px;
+}
+
+nav .nav-right-section {
+    /*List style es de quitar puntos, el none.*/
+    list-style: none;
+    /*Flex-que sea responsivo y flexible*/
+    display: flex;
+    justify-content:space-evenly;
+    /*Centrado verticalmente*/
+    align-items: center;
+    /*Width es anchura*/
+    width: 250px;
+    height: auto;
+}
+nav .nav-right-section a { 
+    color: initial;
+}
+
+nav .nav-right-section .menu {
+    /*Background-image, nos pone la imagen de los puntitos del google ennuestra page*/
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 30px;
+    /*Tamaño de la imagen, y contenida dentro de los elementos*/
+    /*Salta al tamaño del icono a lo más grande posible, siempre y cuando, este dentro del nav right section*/
+    background-size: contain;
+    height: 30px; 
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+    /*Redondea la imagen, 10 lo hace sin bordes, es cuestión de configurar a como lo queramos nosotros, p.ej. 50 ya la redondea*/
+    border-radius: 40px;
+    margin-left: 1px;
+    width: 35px;
+    height: 35px;
+}
+/********************************************************/
+/****************************************/
+/*******************************/
+/*Main, buscador*/
+main{ 
+    /*Margin-top, agrega margen arriba*/
+    margin-top: 150px;
+    /*Centra todo, Lo acomoda el contenido del main horizontalmente*/
+    text-align: center;
+}
+main .main-logo {
+    /*cero marca que se mueven primero 0 y luego en auto, centra el elemento horizontalmente, dentro de su contenedor, el cero dice que no hay espacio entre este elemento y los que esten arriba o abajo*/
+    margin: 0 auto;
+    width: 530px;
+    margin-bottom: 35px;
+}
+
+main .main-logo img {
+    height: 120px;
+}
+   /*Margin-bottom, agrega margen abajo, para que no se junten las imagenes*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container {
+    width: 525px;
+    border: 1px solid #1214181f;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    border: none;
+    width: 530px;
+    height: 40px;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    /*:hover-el usuario interactua con un elemento señalador*/
+box-shadow: 0 1px 6px 0px #20212447;
+border: color #1214181f;
+}
+
+main .main-input .search-icon{
+    background-image: url("https://seekicon.com/free-icon-download/search_20.svg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    padding-left: 6%;
+}
+
+main .main-input .micro-icon {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/800px-Google_mic.svg.png");
+width: 14px;
+height: 14px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+padding-left: 1%;
+}
+
+main .main-input .cam-icon {
+    background-image:url("https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg");
+    width: 17px;
+    height: 17px;
+background-repeat: no-repeat;
+background-position:center;
+background-size: contain;
+padding-right: 8%;
+}
+main .main-buttons button {
+    border: none;
+    height: 36px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    padding: 0 15px;
+    border: 1px solid #f8f8fa ;
+    margin-right: 10px;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 1);
+    /*Borde del boton*/
+    border: 1px solid #dadca0;
+    color: #202124;
+    cursor: pointer;
+}
+/********************************************************/
+/****************************************/
+/*******************************/
+/*Footer*/
+
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    display: grid;
+    /*fr es el número de columnas que hay*/
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-top: 1px solid #e4e4e4;
+    /*bottom-el cero por ciento manda todo el texto hacia abajo*/   
+    bottom: 0;
+}
+/*Para entrar no se debe poner . por que no es una clase, solo es parte de*/
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+footer ul li a{
+    color: #70757a;
+    margin: 10px;
+}
+footer .footer-left {
+    justify-self: left;
+}
+footer .footer-right{
+    justify-self: right;
+}
