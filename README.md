@@ -28,3 +28,6 @@ Se llevo a cabo la realización de la interfaz de Google, tomando en cuenta su U
 # 📎Link del demo:
 Da click aquí para visualizar mi proyecto completo:👉🏻
 [CLONACIÓN DE GOOGLE](https://sarmik-23.github.io/Google-clone/)
+
+
+![image](https://user-images.githubusercontent.com/132253502/235527745-783cd932-b62e-43b4-bc2f-6af2711b0d6d.png)
